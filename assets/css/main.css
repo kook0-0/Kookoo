@@ -333,6 +333,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     display: flex;
     list-style: none;
     align-items: center;
+
   }
 
   .navmenu li {
@@ -458,6 +459,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     transition: 0.3s;
     z-index: 9998;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    height: 160px;
   }
 
   .navmenu a,
@@ -545,9 +548,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
   .mobile-nav-active .navmenu {
     position: fixed;
-    overflow: hidden;
+    /* overflow: hidden; */
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+   
     transition: 0.3s;
   }
 
@@ -857,6 +860,13 @@ section,
 }
 .hero h2 span{position: relative;}
 .hero h2 span::before{content: ''; display: inline-block; width: 6px; height: 6px; background: #fff; width: 100%;position: absolute; bottom: 0; animation: ani1 2s linear 0.5s both;}
+
+@media (max-width:1000px){
+  .hero h2{font-size: 40px;}
+  .hero h2 span::before{height: 3px;}
+}
+
+
 @keyframes ani1{
   0%{width: 0%;}
   100%{width: 100%;}
@@ -904,7 +914,7 @@ section,
 --------------------------------------------------------------*/
 .about .content h2 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 34px;
   
 }
 
@@ -928,6 +938,7 @@ section,
 .about .content li .ls6{letter-spacing:7.5px;}
 .about .content li .ls15{letter-spacing: 18px;}
 .about .content li .ls25{letter-spacing: 46px;}
+.about .content li em{display: inline-block; margin-left:50px; font-style: normal;}
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
